@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "A collection of SOTA Image Classification Models in PyTorch"
+date:   2022-05-08 22:21:59 +00:00
+image: /images/vit_banner.png
+categories: projects
+code: https://github.com/sithu31296/sota-backbones
+---
+Intended for easy to use and integrate SOTA image classification models into down-stream tasks and finetuning with custom datasets.
