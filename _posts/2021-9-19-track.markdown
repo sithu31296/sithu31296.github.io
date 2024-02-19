@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "Object Tracking with YOLO, CLIP and DeepSORT"
+date:   2021-09-19 22:21:59 +00:00
+image: /images/track.gif
+categories: projects
+code: https://github.com/sithu31296/simple-object-tracking
+---
+Tracking by detection with real-time YOLO detector with classic DeepSORT tracking pipeline and zero-shot feature extractor, CLIP.
