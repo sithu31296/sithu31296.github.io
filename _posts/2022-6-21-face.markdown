@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "Easy-to-use Face Analysis Tool"
+date:   2022-06-21 22:21:59 +00:00
+image: /images/face.png
+categories: projects
+code: https://github.com/sithu31296/EasyFace
+---
+Face analysis tool including face & landmark detection, recognition, facial expression recognition and facial attribute classification.

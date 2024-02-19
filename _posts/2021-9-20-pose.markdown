@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "Top-Down Multi-person Pose Estimation"
+date:   2021-09-20 22:21:59 +00:00
+image: /images/pose.jpg
+categories: projects
+code: https://github.com/sithu31296/pose-estimation
+---
+Multi-person pose estimation based on top-down method, incorporating real-time YOLO detector with SOTA pose estimation models.
