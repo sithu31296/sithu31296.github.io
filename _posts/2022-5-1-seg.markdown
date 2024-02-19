@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "SOTA Segmentation Models in PyTorch"
+date:   2022-05-01 22:21:59 +00:00
+image: /images/seg.jpg
+categories: projects
+github: https://github.com/sithu31296/semantic-segmentation
+---
+Easy to use and customizable SOTA semantic segmentation models in PyTorch.
