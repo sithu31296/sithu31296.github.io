@@ -6,7 +6,7 @@ image: /images/mvfp.png
 categories: research
 author: "Sithu Aung"
 authors: "<strong>Sithu Aung</strong>, Haesol Park, Hyungjoo Jung, Junghyun Cho"
-venue: "IEEE/CVF Winter Conference on Applicaitons of Computer Vision (WACV), 2024"
+venue: "IEEE/CVF Winter Conference on Applicaitons of Computer Vision (WACV)"
 paper: https://openaccess.thecvf.com/content/WACV2024/html/Aung_Enhancing_Multi-View_Pedestrian_Detection_Through_Generalized_3D_Feature_Pulling_WACV_2024_paper.html
 ---
-Effective multi-view feature pulling method for detecting dense pedestrian crowds with sparsely located CCTV cameras.
+Effective multi-view feature pulling method for detecting dense pedestrian crowds with sparsely located CCTV cameras within a spacious scene. 
