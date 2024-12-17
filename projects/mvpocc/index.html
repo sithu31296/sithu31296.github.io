@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="A new dataset for occupancy prediction in dense pedestrian environments.">
+  <meta name="keywords" content="MVP-Occ, OmniOcc">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MVP-Occ: Multi-view Pedestrian Occupancy Prediction with a Novel Synthetic Dataset</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script> -->
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">MVP-Occ: Multi-view Pedestrian Occupancy Prediction with a Novel Synthetic Dataset (AAAI'25)</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://sithu31296.github.io/">Sithu Aung</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.co.kr/citations?user=pEx-E2wAAAAJ&hl=ko">Min-Cheol Sagong</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://junghyuncho.notion.site/Junghyun-Cho-36f85eff362148dab9e23e6628fe3551">Junghyun Cho</a><sup>1,2,3</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Korea Institute of Science and Technology</span>
+            <span class="author-block"><sup>2</sup>AI-Robotics, KIST School, University of Science and Technology, Korea</span>
+            <span class="author-block"><sup>3</sup>Yonsei-KIST Convergence Research Institute, Yonsei University</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://sithu31296.github.io/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://sithu31296.github.io/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://sithu31296.github.io/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://sithu31296.github.io/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://sithu31296.github.io/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <!-- <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/images/teaser.png" type="video/mp4">
+      </video> -->
+      <img src="./static/images/teaser.png", alt="teaser", class="center" style="width:700px;">
+      <h2 class="subtitle has-text-centered">
+        A comprehensive dataset with a focus on dense pedestrian crowds in surveillance scenes.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-steve">
+          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/alley_view1.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair-tp">
+          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/alley_view5.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-blueshirt">
+          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/park_view1.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-mask">
+          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/park_view3.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-shiba">
+          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/field_view1.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-fullbody">
+          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/field_view4.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-coffee">
+          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/facade_view2.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-toby">
+          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/facade_view5.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We address an advanced challenge of predicting pedestrian occupancy 
+            as an extension of multi-view pedestrian detection in urban traffic.
+            To support this, we have created a new synthetic dataset called <b>MVP-Occ</b>, 
+            designed for dense pedestrian scenarios in large-scale scenes.
+            Our dataset provides detailed representations of pedestrians using voxel structures, 
+            accompanied by rich semantic scene understanding labels, 
+            facilitating visual navigation and insights into pedestrian spatial information.
+          </p>
+          <p>
+            Furthermore, we present a robust baseline model, termed <b>OmniOcc</b>, capable of predicting 
+            both the voxel occupancy state and panoptic labels for the entire scene from multi-view images.
+            Through in-depth analysis, we identify and evaluate the key elements of our proposed model, 
+            highlighting their specific contributions and importance.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <!-- <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div> -->
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">OmniOcc Model</h2>
+        <img src="./static/images/model.png", alt="model", style="width:auto;">
+        <div class="content has-text-justified">
+          <p>
+            A unified occupancy prediction model specifically designed for multi-view dense pedestrian environments,
+            characterized by its expandability and ability to handle various combinations of camera configurations
+            and scene dimensions during train and test time.
+          </p>
+          <p>
+            Additionally, the model is designed to predict 2D pedestrian occupancy in the ground plane 
+            while simultaneously predicting 3D semantic occupancy for the entire scene.
+            Using pedestrian instances as center locations, our model can further group semantic occupancy
+            into instance and panoptic occupancies.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">MVP-Occ Dataset</h2>
+        <img src="./static/images/scenes.png", alt="model", style="width:auto;">
+        <div class="content has-text-justified">
+          <p>
+            We propose a novel synthetic Multi-View Pedestrian Occupancy dataset, 
+            comprising five large-scale scenes, designed to mimic real-world environments.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-centered">
+      <div class="column content">
+          <h3>Occupancy Labels</h3>
+          <img src="./static/images/occupancy_labels.png", alt="model", style="width:auto;">
+          <p>
+            The entire scene is represented by voxels, and each voxel is annotated with one of five classes, 
+            indicating whether it belongs to a pedestrian, the background environment (ground, walls, others), 
+            or is empty.
+          </p>
+      </div>
+
+      <div class="column content">
+          <h3>Scene Point Cloud</h3>
+          <img src="./static/images/occupancy_labels.png", alt="model", style="width:auto;">
+          <p>
+            We also provide the scene point cloud data without any pedestrians.
+          </p>
+      </div>
+    </div>
+
+    <div class="columns is-centered">
+      <div class="column content">
+          <h3>Pedestrians Labels</h3>
+          <img src="./static/images/poses.jpg", alt="model", style="width:auto;">
+          <p>
+            We also offer 3D poses and 2D locations in the groud plane of pedestrians 
+            for pose estimation and multi-view detection tasks.
+          </p>
+      </div>
+
+      <div class="column content">
+        <h3>Pixel-level Annotations</h3>
+        <img src="./static/images/pixel_annotations.png", alt="model", style="width:auto;">
+        <p>
+          In addition to 3D annotations at the scene-level, 
+          we also provide multi-view pixel-level annotations.
+        </p>
+    </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-three-fifths">
+        <div class="content has-text-justified">
+          <h4>Dataset Details</h4>
+          <img src="./static/images/dataset_statistics.png", alt="model", style="width:450px;", class="center">
+          <p>
+            Each scene has 2500 frames, generated at 10 FPS frame rate,
+            with an image size of 1920x1080.
+            The number of cameras vary depending on the scene characteristics with
+            the goal of maximizing scene coverage for each camera to mimic
+            the real-world CCTV camera setup.
+          </p>
+
+          <h4>Folder Structure</h4>
+          <img src="./static/images/folder_structure.png", alt="model", style="width:auto;">
+          <p>
+            The dataset includes three main folders:
+            <ol>
+              <li>"images": Pixel-level annotations for rendered simulation with pedestrians.</li>
+              <li>"scene": Pixel-level annotations for a scene without pedestrians.</li>
+              <li>"annotations": 3D human poses and ground plane locations with semantic and instance occupancy labels.</li>
+            </ol>
+          </p>
+          Camera calibration parameters and poses are provided in "poses.json".
+
+          <br></br>
+
+          <h4>Download Links (Sample)</h4>
+          Since the dataset is quite huge, we offer a small subset of the dataset (100 frames).
+          
+          <br></br>
+          <h4>Download Links (Full dataset)</h4>
+          You can dowload each scene of the full dataset.
+          
+          <ul>
+            <li>Alley (??GB) -> </li>
+            <li>Plaza (??GB) -> </li>
+            <li>Field (??GB) -> </li>
+            <li>Park (??GB) -> </li>
+            <li>Facade (??GB) -> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Quantitative Results</h2>
+        </div>
+    </div>
+
+    <div class="columns is-centered">
+      <div class="column content">
+          <h3>Same-scene Evaluation</h3>
+          <img src="./static/images/same_scene_2d_occ.png", alt="model", style="width:auto;">
+          <img src="./static/images/same_scene_3d_occ.png", alt="model", class="center", style="width:300px;">
+      </div>
+
+      <div class="column content">
+          <h3>Synthetic-to-real Evaluation</h3>
+          <img src="./static/images/synth_to_real_2d_occ.png", alt="model", class="center", style="width:300px;">
+          <img src="./static/images/synth_to_real_3d_occ.png", alt="model", class="center", style="width:300px;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Qualitative Results</h2>
+        </div>
+    </div>
+
+    <div class="columns is-centered">
+      <div class="column content">
+          <h3>Same-scene Evaluation</h3>
+          <img src="./static/images/same_scene_park.png", alt="model", style="width:auto;">
+          <p>Figure. 2D and 3D occupancy prediction under same-scene evaluation of the Park scene.</p>
+          <br></br>
+          <img src="./static/images/all_same_scene.png", alt="model", style="width:auto;">
+          <p>Figure. 3D occupancy prediction under same-scene evaluation for all scenes in MVP-Occ dataset.</p>
+      </div>
+
+      <div class="column content">
+          <h3>Synthetic-to-real Evaluation</h3>
+          <img src="./static/images/facade2wt.png", alt="model", class="center", style="width:400px;">
+          <p>Figure. 3D occupancy prediction under synthetic-to-real evaluation (Facade to WildTrack).</p>
+          <img src="./static/images/all2wt.png", alt="model", class="center", style="width:450px;">
+          <p>Figure. 3D occupancy prediction and visualizations of the rendered segmentation masks 
+            under synthetic-to-real evaluation (Each scene to WildTrack).</p>
+      </div>
+    </div>
+  </div>
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-three-fifths">
+      <img src="./static/images/render_comp.png", alt="model", style="width:auto;">
+      <div class="content has-text-justified">
+        <p>
+          Figure. Comparison between ground-truth and rendered segmentation masks for the WildTrack scene.
+        </p>
+      </div>
+    </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{aung2024mvpocc,
+      title={Multi-View Pedestrian Occupancy Prediction with a Novel Synthetic Dataset},
+      author={Aung, Sithu, Sagong, Min-cheol, and Cho, Junghyun},
+      booktitle={The 39th Annual AAAI Conference on Artificial Intelligence},
+      year={2025},
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./static/videos/nerfies_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This website is built upon <a
+              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
