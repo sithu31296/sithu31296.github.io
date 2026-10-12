@@ -1,0 +1,77 @@
+{
+  "name": "Sithu Aung",
+  "title": "Sithu Aung — 3D Vision Researcher",
+  "description": "Sithu Aung is a PhD student at Czech Technical University in Prague, researching 3D vision, scene reconstruction and understanding, and digital twins.",
+  "url": "https://sithu31296.github.io/",
+  "static_directories": ["mvpocc"],
+  "email": "sithu31296@gmail.com",
+  "email_client": "gmail",
+  "portrait": "assets/images/profile.png",
+  "role": "PhD student · Computer vision",
+  "location": "Prague, Czech Republic",
+  "hero": {
+    "badge": "PhD Student",
+    "show_artwork": true,
+    "artwork": "assets/images/reconstruction-pointcloud.png",
+    "first_line": "Sithu",
+    "second_line": "Aung",
+    "tagline": "3D vision, geometry & scene understanding",
+    "description": "I study 3D vision at Czech Technical University in Prague."
+  },
+  "socials": [
+    {"label": "Google Scholar", "url": "https://scholar.google.com/citations?user=ifybhH8AAAAJ&hl=en"},
+    {"label": "GitHub", "url": "https://github.com/sithu31296"}
+  ],
+  "theme": {
+    "paper": "#fffdf7",
+    "ink": "#141514",
+    "blue": "#b6d4f3",
+    "pink": "#ffadd0",
+    "yellow": "#ffdc65",
+    "highlight": "#ffadd0",
+    "green": "#d5edc0",
+    "badgegreen": "#b8ff5c"
+  },
+  "sections": [
+    {"id": "hero", "enabled": true},
+    {"id": "news", "enabled": true, "nav": "News", "heading": "News & updates", "visible_count": 3},
+    {"id": "research", "enabled": true, "nav": "Research", "heading": "Research interests"},
+    {"id": "publications", "enabled": true, "nav": "Publications", "heading": "Publications", "description": "Research in geometry, depth, and multi-view understanding.", "show_filters": true},
+    {"id": "about", "enabled": true, "nav": "About", "heading": "Academic background"},
+    {"id": "service", "enabled": true, "heading": "Service & reviewing", "scroll_speed": 36},
+    {"id": "contact", "enabled": true, "nav": "Contact", "heading": "Contact", "description": "For questions about my work or research conversations, feel free to get in touch."}
+  ],
+  "research": [
+    {"title": "3D Vision", "description": "Recovering geometry, camera pose, and structure from images.", "icon": "cube", "color": "yellow"},
+    {"title": "Scene Reconstruction & Understanding", "description": "Reconstructing scenes and understanding objects, people, and their spatial relationships.", "icon": "scene", "color": "pink"},
+    {"title": "Digital Twins", "description": "Exploring visual representations that connect physical environments with their digital counterparts.", "icon": "layers", "color": "blue"}
+  ],
+  "about": {
+    "cards": [
+      {"label": "Current", "title": "PhD student", "institution": "Czech Technical University in Prague", "color": "green"},
+      {"label": "Previously", "title": "M.S. & research internship", "institution": "KIST / UST, Korea", "color": "blue"}
+    ],
+    "current": {
+      "institution": "Czech Technical University in Prague",
+      "group": "Visual Recognition Group",
+      "url": "https://vrg.fel.cvut.cz/"
+    },
+    "paragraphs": [
+      "I am a PhD student in the Visual Recognition Group at Czech Technical University in Prague, supervised by Zuzana Kúkelová and co-supervised by Torsten Sattler.",
+      "Previously, I completed my M.S. and worked as an intern researcher in the Visual Intelligence Group at the Korea Institute of Science and Technology / University of Science and Technology, Korea, under Junghyun Cho."
+    ],
+    "links": [
+      {"label": "Visual Recognition Group", "url": "https://vrg.fel.cvut.cz/"},
+      {"label": "Czech Technical University in Prague", "url": "https://fel.cvut.cz/en"},
+      {"label": "Zuzana Kúkelová", "url": "https://cmp.felk.cvut.cz/~kukelova/index.html"},
+      {"label": "Torsten Sattler", "url": "https://tsattler.github.io/"},
+      {"label": "Visual Intelligence Group", "url": "https://vig.kist.re.kr/"},
+      {"label": "Korea Institute of Science and Technology", "url": "https://www.kist.re.kr/eng/index.do"},
+      {"label": "University of Science and Technology, Korea", "url": "https://ust.ac.kr/eng/index.do"},
+      {"label": "Junghyun Cho", "url": "https://junghyuncho.notion.site/Junghyun-Cho-36f85eff362148dab9e23e6628fe3551"}
+    ]
+  },
+  "service": [
+    {"role": "Reviewer", "venues": ["ICCV 2025", "BMVC 2025", "CVPR 2026", "ECCV 2026", "NeurIPS 2026"]}
+  ]
+}

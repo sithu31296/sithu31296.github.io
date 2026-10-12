@@ -1,0 +1,26 @@
+[
+  {
+    "id": "dgsfm-accv-2026",
+    "date": "2026",
+    "category": "Publication",
+    "title": "DGSfM at ACCV 2026",
+    "text": "DGSfM is an oral presentation at ACCV 2026.",
+    "url": "https://dgsfm.github.io/"
+  },
+  {
+    "id": "depth2pose-neurips-2026",
+    "date": "2026",
+    "category": "Publication",
+    "title": "Depth2Pose at NeurIPS 2026",
+    "text": "Our pose-based benchmark for monocular depth estimation appears in the NeurIPS 2026 ED Track.",
+    "url": "https://kocurvik.github.io/depth2pose/"
+  },
+  {
+    "id": "plot-eccv-2026",
+    "date": "2026",
+    "category": "Publication",
+    "title": "PLOT at ECCV 2026",
+    "text": "Pseudo-labeling via object tracking for monocular 3D object detection.",
+    "url": "https://plot-eccv.github.io/"
+  }
+]

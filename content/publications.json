@@ -1,0 +1,85 @@
+[
+  {
+    "id": "dgsfm",
+    "title": "DGSfM: Depth-Guided Scale-Aware Global Structure-from-Motion",
+    "authors": ["Sithu Aung", "Viktor Kocur", "Yaqing Ding", "Torsten Sattler", "Zuzana Kukelova"],
+    "venue": "ACCV 2026",
+    "year": 2026,
+    "badge": "Oral",
+    "featured": true,
+    "image": "assets/images/dgsfm.gif",
+    "image_alt": "DGSfM scene reconstruction demonstration",
+    "description": "A monocular geometry prior Global SfM framework with pairwise scale ambiguity resolving, view-graph and match filtering, and more deterministic initialization.",
+    "tags": ["3D Vision", "Structure-from-Motion"],
+    "links": [
+      {"label": "Paper", "url": "https://arxiv.org/abs/2607.09507"},
+      {"label": "Code", "url": "https://github.com/sithu31296/DGSfM"},
+      {"label": "Project", "url": "https://dgsfm.github.io/"}
+    ]
+  },
+  {
+    "id": "depth2pose",
+    "title": "Depth2Pose: A Pose-Based Benchmark for Monocular Depth Estimation without Ground-Truth Depth",
+    "authors": ["Viktor Kocur*", "Sithu Aung*", "Gabrielle Flood*", "Yaqing Ding", "Lukas Bujnak", "Torsten Sattler", "Zuzana Kukelova"],
+    "venue": "NeurIPS 2026 · ED Track",
+    "year": 2026,
+    "featured": false,
+    "image": "assets/images/depth2pose.png",
+    "image_alt": "Depth2Pose benchmark overview for depth-aware relative pose estimation",
+    "description": "A task-driven evaluation framework for monodepth based on depth-aware relative pose estimation, and a new dataset connected to this.",
+    "tags": ["3D Vision", "Depth Estimation"],
+    "links": [
+      {"label": "Paper", "url": "https://arxiv.org/abs/2605.19797"},
+      {"label": "Code", "url": "https://github.com/kocurvik/depth2pose"},
+      {"label": "Project", "url": "https://kocurvik.github.io/depth2pose/"}
+    ]
+  },
+  {
+    "id": "plot",
+    "title": "PLOT: Pseudo-Labeling via Object Tracking for Monocular 3D Object Detection",
+    "authors": ["Seokyeong Lee*", "Sithu Aung*", "Junyong Choi", "Seungryong Kim", "Ig-Jae Kim", "Junghyun Cho"],
+    "venue": "ECCV 2026",
+    "year": 2026,
+    "featured": false,
+    "image": "assets/images/plot.gif",
+    "image_alt": "PLOT monocular 3D object detection demonstration",
+    "description": "A practical training-free pseudo-labeling framework for 3D object detection.",
+    "tags": ["Scene Understanding", "Object Detection"],
+    "links": [
+      {"label": "Paper", "url": "https://arxiv.org/abs/2507.02393"},
+      {"label": "Project", "url": "https://plot-eccv.github.io/"}
+    ]
+  },
+  {
+    "id": "mvpocc",
+    "title": "MVPOcc: Multi-View Pedestrian Occupancy Prediction with a Novel Synthetic Dataset",
+    "authors": ["Sithu Aung", "Min-Cheol Sagong", "Junghyun Cho"],
+    "venue": "AAAI 2025",
+    "year": 2025,
+    "featured": false,
+    "image": "assets/images/mvpocc.gif",
+    "image_alt": "Multi-view pedestrian occupancy prediction in MVPOcc",
+    "description": "A new occupancy prediction dataset for dense pedestrians in multi-view environments.",
+    "tags": ["Scene Understanding", "Occupancy Prediction"],
+    "links": [
+      {"label": "Paper", "url": "https://arxiv.org/abs/2412.13569"},
+      {"label": "Project", "url": "https://sithu31296.github.io/mvpocc/"}
+    ]
+  },
+  {
+    "id": "mvfp",
+    "title": "MVFP: Enhancing Multi-view Pedestrian Detection Through Generalized 3D Feature Pulling",
+    "authors": ["Sithu Aung", "Haesol Park", "Hyungjoo Jung", "Junghyun Cho"],
+    "venue": "WACV 2024",
+    "year": 2024,
+    "featured": false,
+    "image": "assets/images/mvfp.gif",
+    "image_alt": "MVFP multi-view pedestrian detection demonstration",
+    "description": "An effective 3D feature pulling method for generalizable multi-view pedestrian detection.",
+    "tags": ["Scene Understanding", "Multi-view Detection"],
+    "links": [
+      {"label": "Paper", "url": "https://openaccess.thecvf.com/content/WACV2024/html/Aung_Enhancing_Multi-View_Pedestrian_Detection_Through_Generalized_3D_Feature_Pulling_WACV_2024_paper.html"},
+      {"label": "Video", "url": "https://www.youtube.com/watch?v=73r9co0NMIA"}
+    ]
+  }
+]

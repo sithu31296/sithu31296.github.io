@@ -1,0 +1,33 @@
+<section
+  id="service"
+  class="section service-section"
+  aria-labelledby="service-title"
+>
+  <div class="container">
+    <div class="section-heading">
+      <div><h2 id="service-title">$heading</h2></div>
+      <button
+        class="button button-small button-secondary service-pause"
+        type="button"
+        aria-controls="service-strip"
+        hidden
+      >
+        Pause scrolling
+      </button>
+    </div>
+    <div
+      id="service-strip"
+      class="service-marquee"
+      data-scroll-speed="$scroll_speed"
+      tabindex="0"
+      role="region"
+      aria-label="Academic service venues; scroll horizontally to explore"
+    >
+      <div class="service-track">
+        <ul class="service-list">
+          $service_items
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
